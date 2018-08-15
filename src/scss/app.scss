@@ -1,0 +1,27 @@
+// dependencies
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~simple-line-icons/scss/simple-line-icons';
+
+// curanipe-surf website styles
+@import 'general';
+@import 'navbar';
+@import 'header';
+@import 'footer';
+@import '404';
+@import 'modal';
+@import 'carousel_timeline';
+@import 'carousel_multiview';
+@import 'lightbox_gallery';
+@import 'pages/home';
+@import 'pages/team';
+@import 'pages/events';
+@import 'pages/events_single';
+@import 'pages/services';
+@import 'pages/services_single';
+@import 'pages/news';
+@import 'pages/news_single';
+@import 'pages/contact';

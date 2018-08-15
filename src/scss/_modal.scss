@@ -1,0 +1,20 @@
+.modalbox {
+  max-width: 570px;
+  padding: 46px 50px;
+  background-color: $blue;
+  text-align: center;
+  margin: 18px auto;
+
+  p {
+    margin-top: 8px;
+  }
+
+  &__icon {
+    font-size: 5rem;
+  }
+
+  &__title {
+    margin-top: 30px;
+    color: $white;
+  }
+}

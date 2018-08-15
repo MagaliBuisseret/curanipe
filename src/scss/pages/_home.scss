@@ -1,0 +1,53 @@
+// highlights section
+.highlights {
+  &__thumbnail--1 {background-image: url(../../images/home-image-1.jpg);}
+  &__thumbnail--2 {background-image: url(../../images/home-image-2.jpg);}
+  &__thumbnail--3 {background-image: url(../../images/home-image-3.jpg);}
+  &__thumbnail--4 {background-image: url(../../images/home-image-4.jpg);}
+}
+
+// latest events section
+.latest {
+  &__image--1 {background-image: url(../../images/home-image-5.jpg);}
+  &__image--2 {background-image: url(../../images/home-image-6.jpg);}
+  &__image--3 {background-image: url(../../images/home-image-7.jpg);}
+}
+
+// brands section
+.brands {
+  margin-top: 140px;
+
+  &__banner {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// breakpoints
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .highlights {
+    &__container {
+      grid-template: 450px / repeat( 4, 1fr );
+      grid-gap: 0 20px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .highlights {
+    &__container {
+      grid-gap: 0 30px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .highlights {
+    &__container {
+      grid-gap: 0 50px;
+    }
+  }
+}

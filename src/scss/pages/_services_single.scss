@@ -1,0 +1,118 @@
+// description
+.description {
+  p {
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 0 50px;
+    text-align: center;
+  }
+}
+
+//
+.schedule__container, .price__container {
+  margin-top: 50px;
+  padding: 0 50px;
+
+  .row {
+    justify-content: center;
+  }
+}
+
+// schedule
+.schedule {
+  &__thumbnail {
+    text-align: center;
+
+    & + & {
+      margin-top: 50px;
+    }
+
+    h4.secondary {
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    font-size: 5.625rem;
+  }
+}
+
+// price
+.price {
+  &__table {
+    .table {
+      thead th {
+        background-color: $yellow;
+        text-align: center;
+        border: none;
+        padding: 18px 0;
+
+        h3 {
+          text-transform: capitalize;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      tbody {
+        text-align: center;
+
+        tr {
+          background-color: $lightGrey;
+        }
+
+        tr:nth-child(2n) {
+          background-color: transparent;
+        }
+
+        td {
+          border: none;
+          padding: 15px 0;
+
+        }
+
+        h4 {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    & + & {
+      margin-top: 30px;
+    }
+  }
+}
+
+// breakpoints
+@media ( min-width: 576px ) {
+  .schedule__container, .price__container {
+    max-width: 910px;
+    margin: 50px auto;
+
+    .row {
+      justify-content: space-between;
+    }
+  }
+
+  .schedule {
+    &__thumbnail {
+      max-width: 370px;
+
+      & + & {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .price {
+    &__table {
+      max-width: 370px;
+
+      & + & {
+        margin-top: 0;
+      }
+    }
+  }
+}

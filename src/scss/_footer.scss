@@ -1,0 +1,108 @@
+// footer
+footer {
+  height: 827px;
+  background-image: linear-gradient($white, $greyAlpha, $greyAlpha), url(../images/footer-background.jpg);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 70px;
+
+  .row * {
+    margin-top: 30px;
+  }
+
+  .footer__brandContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__brand {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer__navigation, .footer__contact, address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .footer__item {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $white;
+    margin: 10px 0;
+    border-top: none;
+
+    &--secondary {
+      font-size: 0.625rem;
+      font-weight: 400;
+
+      i {
+        font-size: 0.85rem;
+        margin: 0 5px;
+      }
+    }
+  }
+
+
+  form {
+    .form__input, .form-control {
+      font-size: 0.85rem;
+      border: none;
+      color: $blue;
+      background-color: rgba($white, 0.8);
+      margin: 20px 0;
+
+      &::placeholder {
+        color: $blue;
+      }
+    }
+
+    .form__button, .btn {
+      font-size: 0.85rem;
+      width: 50%;
+      color: $white;
+      border: 1px solid $white;
+      background: transparent;
+      margin: 0;
+
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    background-image: linear-gradient($white 15px, transparent 50%, transparent), url(../images/footer-background.jpg); 
+
+    .footer__item {
+      font-size: 1.1875rem;
+      margin: 17px 0;
+
+      &--secondary {
+        font-size: 1rem;
+
+        i {
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    form {
+      .form__input, .form-control {
+        font-size: 1.1875rem;
+      }
+
+      .form__button, .btn {
+        font-size: 1.1875rem;
+      }
+    }
+  }
+}

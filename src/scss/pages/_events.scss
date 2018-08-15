@@ -1,0 +1,16 @@
+// header
+.header--events {
+  background-image: $bannerGradient, url( ../../images/events-banner.jpg );
+}
+
+// highlight
+.highlight__image--events {
+  background-image: url( ../../images/events-image-1.jpg );
+} 
+
+// moreEvents
+.moreEvents {
+  .link--center {
+    margin-top: 115px;
+  }
+}

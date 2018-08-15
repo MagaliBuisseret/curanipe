@@ -1,0 +1,11 @@
+// header
+.header--services {
+  background-image: $bannerGradient, url(../../images/services-banner.jpg);
+}
+
+// wedo
+.wedo {
+  &__thumbnail--1 {background-image: linear-gradient( $black 0%, transparent 50% ), url(../../images/services-image-1.jpg);}
+  &__thumbnail--2 {background-image: linear-gradient( $black 0%, transparent 50% ), url(../../images/services-image-2.jpg);}
+  &__thumbnail--3 {background-image: linear-gradient( $black 0%, transparent 50% ), url(../../images/services-image-3.jpg);}
+}
